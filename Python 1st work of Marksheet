@@ -1,0 +1,30 @@
+print("=== Marksheet ===")
+total_marks = 500
+english_Marks = int(input("Enter your Marks of English "))
+urdu_Marks = int(input("Enter your Marks of Urdu "))
+chemistry_Marks = int(input("Enter your Marks of Chemistry "))
+computer_Marks = int(input("Enter your Marks of Computer "))
+physics_Marks = int(input("Enter your Marks of Physics "))
+obtain_marks = english_Marks + urdu_Marks + chemistry_Marks + computer_Marks + physics_Marks
+percentage = (obtain_marks/total_marks) * 100
+
+print("English marks: ",english_Marks)
+print("Urdu marks ",urdu_Marks)
+print("Chemistry marks: ", chemistry_Marks)
+print("Computer marks: ",computer_Marks)
+print("Physics Marks: ", physics_Marks)
+print("Obtain marks: ",obtain_marks," Total marks: ", total_marks)
+print("Percentage: ", percentage)
+
+if percentage >= 80 and percentage < 100:
+    print("Grade: A+")
+elif percentage >= 70 < 80:
+    print("Grade: A")
+elif percentage >= 60 < 70:
+    print("Grade: B")
+elif percentage >= 50 < 60:
+    print("Grade: C")
+elif percentage >= 40 < 50:
+    print("Grade: D")
+else:
+    print("Grade F")
